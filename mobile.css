@@ -1,0 +1,122 @@
+/* andreas07 - an open source xhtml/css website layout by Andreas Viklund - http://andreasviklund.com . Free to use for any purpose as long as the proper credits are given for the original design work.
+
+Version: 1.1, November 28, 2005 */
+
+/**************** Page and tag styles ****************/
+
+body
+{margin:0; padding:0; color:#303030; background:#fafafa top left repeat-y; font:76% Verdana,Tahoma,sans-serif;}
+
+ul
+{list-style:circle; margin:15px 0 20px 0; font-size:0.9em;}
+
+li
+{margin:0 0 8px 25px;}
+
+a
+{color:#ff2a2a; font-weight:bold; text-decoration:none;}
+
+a:hover
+{color:#505050; text-decoration:underline;}
+
+img
+{float:left; margin:0 15px 15px 0; padding:1px; background:#ffffff; border:1px solid #d0d0d0;}
+
+a img
+{border-color:#ff2a2a;}
+
+a img:hover
+{background:#ff2a2a; border-color:#ff2a2a;}
+
+
+#menu a
+{display:block; color:#606060; background:#e0e0e0 top right repeat-y; font-size:1.8em; font-weight:normal; text-decoration:none; letter-spacing:-2px;}
+
+#menu a:hover 
+{color:#303030; background:#f0f0f0 top right repeat-y;}
+
+#menu a.active
+{padding:5px 18px 5px 0; background:#fafafa; border-top:2px solid #c0c0c0; border-bottom:2px solid #c0c0c0;}
+
+#menu a.active:hover
+{color:#505050; background:#fafafa;}
+
+/**************** Content area styles ****************/
+
+/**********************************
+
+Use: cmxform template
+
+***********************************/
+form.cmxform fieldset {
+	margin-bottom: 10px;
+}
+
+form.cmxform legend {
+	padding: 0 2px;
+	_margin: 0 -7px; /* IE Win */
+}
+
+form.cmxform label {
+	display: inline-block;
+	line-height: 1.8;
+	vertical-align: top;
+	cursor: hand;
+}
+
+form.cmxform fieldset p {
+	list-style: none;
+	padding: 5px;
+	margin: 0;
+}
+
+form.cmxform fieldset fieldset {
+	border: none;
+	margin: 3px 0 0;
+}
+
+form.cmxform fieldset fieldset legend {
+	padding: 0 0 5px;
+}
+
+form.cmxform fieldset fieldset label {
+	display: block;
+	width: auto;
+}
+
+form.cmxform label { width: 100px; } /* Width of labels */
+form.cmxform fieldset fieldset label { margin-left: 103px; } /* Width plus 3 (html space) */
+form.cmxform label.error {
+	margin-left: 103px;
+	width: 220px;
+}
+
+form.cmxform input.submit {
+	margin-left: 103px;
+}
+
+/*\*//*/ form.cmxform legend { display: inline-block; } /* IE Mac legend fix */
+
+form.cmxform {
+	width: 370px;
+}
+
+form.cmxform legend {
+	padding-left: 0;
+}
+
+form.cmxform fieldset {
+	border: none;
+	border-top: 1px solid;
+}
+
+form.cmxform fieldset p, form.cmxform fieldset fieldset {
+	padding: 5px 10px 7px;
+}
+div.error { display: none; }
+input {	border: 1px solid; }
+input.checkbox { border: none }
+textarea { border: 1px solid; }
+select { border: 1px solid; }
+input:focus { border: 1px dotted; }
+input.error { border: 1px dotted;}
